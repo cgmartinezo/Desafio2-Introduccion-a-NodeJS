@@ -1,0 +1,15 @@
+<h1>Servicios</h1>
+
+<div class="row">
+    {{#if services}}
+
+    {{#each services}}
+    {{!-- {{> card title=this.title image=this.img}} --}}
+    {{> card title=this.name desc=this.description}}
+
+    {{/each}}
+
+    {{else}}
+    <p>No hay servicios</p>
+    {{/if}}
+</div>
